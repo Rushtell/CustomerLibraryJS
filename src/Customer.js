@@ -1,7 +1,7 @@
-const Person = require('./Person');
+const Person = require('./Person.js');
 
-class Customer extends Person {
-  constructor(firstName, lastName) {
+module.exports =  class Customer extends Person {
+  constructor(firstName, lastName, address, phoneNumber, email, notes, totalPurchasesAmount, lastPurchaseDate) {
     super(firstName, lastName);
 
     this.address = address;
@@ -10,8 +10,10 @@ class Customer extends Person {
 
     this.email = email;
 
-    this.note = note;
+    this.notes = notes;
 
-    this.money = money;
+    this.totalPurchasesAmount = totalPurchasesAmount;
+
+    this.lastPurchaseDate = lastPurchaseDate;
   }
 }
