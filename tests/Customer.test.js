@@ -1,8 +1,8 @@
 const Customer = require('../src/Customer.js');
 
-test('it should create customer', () => {
+test('ShouldToCreateCustomer', () => {
 
-  const purchaseDate = Date.now();
+  const purchaseDate = new Date(2020, 10, 10);
 
   const customer = new Customer(
     'Vlad',
